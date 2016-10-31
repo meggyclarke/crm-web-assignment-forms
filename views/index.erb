@@ -1,0 +1,24 @@
+
+<div class="contact_header">
+	<strong>There are <%= Contact.all.count%> contacts</strong>
+</div>
+
+
+<div class="tile-wrapper">
+	<% Contact.all.each do |contact| %>
+    <div class="contact-tile">
+    	<a href="/contacts/<%= contact.id%>">
+            <div class="contact-detail">
+                <ul>
+                    <li><h3><%= contact.full_name %></h3></li>
+                    <li class="contact-email"><%= contact.email%></li>
+                    <li class="contact-note"><%= contact.note%></li>
+                </ul>
+            </div>
+        </a>
+    	<div class="contact-links">
+            <a href="/contacts/<%=contact.id%>/edit">Edit</a> | <a href="/contacts/<%=contact.id%>">delete</a>
+        </div>
+    </div>
+	<% end %>
+</div>

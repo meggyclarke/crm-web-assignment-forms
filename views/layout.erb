@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/responsive.css">
+
+</head>
+<body>
+
+ <header>
+    <div id="title_wrapper">
+        <h1>Meggy's CRM </h1>
+    </div>
+    <nav>
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contacts">View all contacts</a></li>
+            <li><a href="/new_contact">Add a new Shiny Contact</a></li>
+            <!-- <p> <li><a href="/edit_contact">Edit a Contact</a></li></p> -->
+            <li><a href="/about">About</a></li>
+         </ul>
+    </nav>
+</header>
+
+<%= yield %>
+
+</body>
+<footer>
+ <p>© Megerifica 2016 </p>
+</footer>
+</html>
