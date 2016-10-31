@@ -67,6 +67,10 @@ delete '/contacts/:id' do
     raise Sinatra::NotFound
   end
 end
+
+after do
+  ActiveRecord::Base.connection.close
+end
 # class Time
 #     Time.new(26, 10,2016).to_date
 # end
