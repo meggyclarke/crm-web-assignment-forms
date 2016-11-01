@@ -103,7 +103,7 @@ li.contact-email {
 
 h1{
   font-family:'Helvetica' sans-serif;
-  margin:px 0;
+  margin: 0;
   font-size: 1.75em;
   font-weight: normal;
   line-height: 0.8em;
@@ -125,18 +125,31 @@ individual selected sites is causing troubles*/
 
 body{
   color:#000000;
-  text: #000000
+  text: #000000;
 }
 
 footer {
   font-size:1em;
   text-align:center;
-  color: #F0F8FF
+  color: #F0F8FF;
   background-color: #000;
   clear: both;
 }
 .contacts{
     background-color: #E6E6FA;
     text-align:center;
-    colour: #000000
+    color: #000000;
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
 }

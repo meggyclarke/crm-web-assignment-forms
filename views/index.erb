@@ -5,8 +5,9 @@
 
 
 <div class="tile-wrapper">
+    <%rainbow=["red","blue", "green", "yellow"]%>
 	<% Contact.all.each do |contact| %>
-    <div class="contact-tile">
+    <div class="contact-tile <%= rainbow.sample%>">
     	<a href="/contacts/<%= contact.id%>">
             <div class="contact-detail">
                 <ul>
